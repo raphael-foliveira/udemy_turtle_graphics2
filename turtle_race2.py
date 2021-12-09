@@ -10,7 +10,6 @@ screen = Screen()
 screen.setup(height=HEIGHT, width=WIDTH)
 colors_list = ["Red", "Green", "Purple", "Blue", "Brown", "Black"]
 racing_turtles = [Turtle(shape="turtle") for color in colors_list]
-turtle_colors = zip(colors_list, racing_turtles)
 turtle_grid_pos = -130
 
 for i in range(len(racing_turtles)):
@@ -21,7 +20,7 @@ for i in range(len(racing_turtles)):
     turtle_grid_pos += 50
 
 
-user_bet = screen.textinput(title="Place your bet!", prompt="Red, Green, Purple, Blue, Brown")
+user_bet = screen.textinput(title="Place your bet!", prompt="Red, Green, Purple, Blue, Brown, Black")
 winner = None
 keep_racing = True
 
